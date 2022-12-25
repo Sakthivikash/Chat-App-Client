@@ -53,7 +53,7 @@ function Sidebar() {
   });
 
   async function getRooms() {
-    await fetch("http://localhost:5000/rooms", {
+    await fetch("https://chat-app-backend-beta.vercel.app/rooms", {
       headers: { token: user.token },
     })
       .then((res) => res.json())
