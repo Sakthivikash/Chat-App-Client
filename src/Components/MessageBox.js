@@ -136,7 +136,12 @@ function MessageBox() {
               variant="primary"
               type="submit"
               color="secondary"
-              style={{ width: "100%" }}
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
               disabled={!user}
             >
               <i className="fas fa-paper-plane"></i>

@@ -30,7 +30,7 @@ function Navigation() {
     <Navbar
       bg="light"
       expand="lg"
-      className="shadow p-3 mb-5 bg-white rounded"
+      className="shadow p-3 mb-5 bg-white"
       id="navbar"
     >
       <Container>

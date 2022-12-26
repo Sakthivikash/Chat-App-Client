@@ -53,12 +53,9 @@ function Sidebar() {
   });
 
   async function getRooms() {
-    await fetch(
-      "https://chat-app-backend-1zku8ioox-sakthivikash.vercel.app/rooms",
-      {
-        headers: { token: user.token },
-      }
-    )
+    await fetch("https://chat-app-server-6xgs.onrender.com/rooms", {
+      headers: { token: user.token },
+    })
       .then((res) => res.json())
       .then((data) => setRooms(data))
       .catch(async (err) => {
